@@ -5,14 +5,17 @@ import { ServiceSection } from "@/components/home/ServiceSection";
 import { TestimonialSection } from "@/components/home/TestimonialSection";
 import { GallerySection } from "@/components/home/GallerySection";
 import { Footer } from "@/components/common/Footer";
-
+ 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-[#FFF9F3] text-[#21152A] selection:bg-[#B88736]/20 selection:text-[#24082F]">
       <Header />
       <main className="flex-1 w-full">
         <HeroSection />
+        {/* 20px White Space Gap */}
+        <div className="h-[20px] w-full bg-white" aria-hidden="true" />
         <AboutSection />
+        <div className="h-[20px] w-full bg-white" aria-hidden="true" />
         <ServiceSection />
         <TestimonialSection />
         <GallerySection />
