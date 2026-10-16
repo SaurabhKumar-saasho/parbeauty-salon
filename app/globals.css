@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #351044;
+  --color-brand-plum: #24082F;
+  --color-brand-gold: #B88736;
+  --color-brand-warm-gold: #D6A64D;
+  --color-brand-ivory: #FFF9F3;
+  --color-brand-blush: #F5E8E8;
+  --color-brand-dark: #21152A;
+  --font-serif: var(--font-playfair), var(--font-serif), "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-playfair: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+:root {
+  --background: #FFF9F3;
+  --foreground: #21152A;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom gold gradient utility classes */
+.gold-gradient {
+  background: linear-gradient(135deg, #D6A64D 0%, #B88736 100%);
+}
+
+.gold-gradient-hover:hover {
+  background: linear-gradient(135deg, #E2B65E 0%, #C79440 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #C59849 0%, #E2B65E 30%, #B88736 70%, #9B6F2B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-gradient-bar {
+  background: linear-gradient(90deg, #351044 0%, #24082F 100%);
+}
+
+/* Smooth luxury shadows */
+.luxury-gold-shadow {
+  box-shadow: 0 8px 24px -4px rgba(184, 135, 54, 0.32), 0 2px 6px -1px rgba(184, 135, 54, 0.18);
+}
+
+.luxury-soft-shadow {
+  box-shadow: 0 10px 30px -5px rgba(36, 8, 47, 0.08);
+}
